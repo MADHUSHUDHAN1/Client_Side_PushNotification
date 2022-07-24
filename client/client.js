@@ -22,6 +22,8 @@ async function send() {
     applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
   });
   console.log("Push Registered...");
+  // console.log(JSON.stringify(subscription));
+
 
   // Send Push Notification
   console.log("Sending Push...");
