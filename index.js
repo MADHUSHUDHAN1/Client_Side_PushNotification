@@ -8,7 +8,7 @@ const http = require('http');
 const port = process.env.PORT || 5000 ;
 const server = http.createServer();
 
-mongoose.connect('mongodb+srv://chang12435:vkaycoc12435@push.nkdolks.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://Madhushudh:madhu123@sbs.tbynzrf.mongodb.net/?retryWrites=true&w=majority');
 
 mongoose.connection.on('error',err=>{
     console.log('Connection failed');
@@ -56,12 +56,12 @@ app.post("/subscribe", (req, res) => {
   res.status(201).json({});
 
   // Create payload
-  const payload = JSON.stringify({ title: "hahahhaha" });
+  // const payload = JSON.stringify({ title: "hahahhaha" });
 
-  // Pass object into sendNotification
-  webpush
-    .sendNotification(subscription, payload)
-    .catch(err => console.error(err));
+  // // Pass object into sendNotification
+  // webpush
+  //   .sendNotification(subscription, payload)
+  //   .catch(err => console.error(err));
 });
 
 
