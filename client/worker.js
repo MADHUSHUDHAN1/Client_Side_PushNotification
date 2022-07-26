@@ -3,7 +3,7 @@ console.log("Service Worker Loaded...");
 self.addEventListener("push", e => {
   const data = e.data.json();
   var options = {
-    body: data.title,
+    body,
     icon: "http://image.ibb.co/frYOFd/tmlogo.png"
   };
   console.log("Push Recieved...");
