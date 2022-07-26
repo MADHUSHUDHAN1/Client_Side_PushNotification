@@ -6,6 +6,6 @@ self.addEventListener("push", e => {
   //   body,
   //   icon: "http://image.ibb.co/frYOFd/tmlogo.png"
   // };
-  console.log("Push Recieved...");
+  // console.log("Push Recieved...");
   e.waitUntil(self.registration.showNotification(data.title, {body: data.body}));
 });
