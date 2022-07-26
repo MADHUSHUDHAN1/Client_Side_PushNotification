@@ -26,9 +26,8 @@ app.use(express.static(path.join(__dirname, "client")));
 
 app.use(bodyParser.json());
 
-const publicVapidKey =
-  "BJthRQ5myDgc7OSXzPCMftGw-n16F7zQBEN7EUD6XxcfTTvrLGWSIG7y_JxiWtVlCFua0S8MTB5rPziBqNx1qIo";
-const privateVapidKey = "3KzvKasA2SoCxsp0iIG_o9B0Ozvl1XDwI63JRKNIWBM";
+const publicVapidKey = 'BP3tErEBYnH_alaVacbdKYOgcDs_lf52kIF7tmU5kYU6lUsap-2K24k0TEB8FNgYTDVPm6AZoJbxhmROn9Tlabs';
+const privateVapidKey ='_X4PeyEd-P4pBIVyU2VxuAvKO0vZWFvl3848OdBPvY0';
 
 
 
