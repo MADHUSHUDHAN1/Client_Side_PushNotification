@@ -2,9 +2,10 @@ console.log("Service Worker Loaded...");
 
 self.addEventListener("push", e => {
   const data = e.data.json();
-  console.log("Push Recieved...");
-  self.registration.showNotification(data.title, {
+  var options = {
     body: data.title,
     icon: "http://image.ibb.co/frYOFd/tmlogo.png"
-  });
+  };
+  console.log("Push Recieved...");
+  e.waitUntil(self.registration.showNotification(data.title, options));
 });
