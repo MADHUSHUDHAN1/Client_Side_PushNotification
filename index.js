@@ -5,7 +5,7 @@ const path = require("path");
 const db = require('./client/model/schema');
 const mongoose = require('mongoose');
 const http = require('http');
-const port = process.env.PORT || 5000 ;
+const port = process.env.PORT || 4000 ;
 const server = http.createServer();
 
 mongoose.connect('mongodb+srv://Madhushudh:madhu123@sbs.tbynzrf.mongodb.net/?retryWrites=true&w=majority');
